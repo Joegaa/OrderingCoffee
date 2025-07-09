@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2263B990-E224-4D65-B1CA-38326E8DB197}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>OrderingCoffee.My.MyApplication</StartupObject>
+    <RootNamespace>OrderingCoffee</RootNamespace>
+    <AssemblyName>OrderingCoffee</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>OrderingCoffee.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>OrderingCoffee.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Cheesecake.Designer.vb">
+      <DependentUpon>Cheesecake.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cheesecake.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColdBrew.Designer.vb">
+      <DependentUpon>ColdBrew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ColdBrew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frappe.Designer.vb">
+      <DependentUpon>Frappe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frappe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HotBrew.Designer.vb">
+      <DependentUpon>HotBrew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HotBrew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MilkTea.Designer.vb">
+      <DependentUpon>MilkTea.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MilkTea.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cheesecake.resx">
+      <DependentUpon>Cheesecake.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColdBrew.resx">
+      <DependentUpon>ColdBrew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frappe.resx">
+      <DependentUpon>Frappe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HotBrew.resx">
+      <DependentUpon>HotBrew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MilkTea.resx">
+      <DependentUpon>MilkTea.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01 Tapioca Pearl Milk Tea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wintermelon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-francesco-ungaro-998641.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Winter-Melon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Okinawa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Matcha.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mango.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Avocado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StrawBerry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Taro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DarkChoco.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cookies.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salted.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RedVelvet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RockyRoad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DoubleDutch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cold.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iced Americano.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SpanishLatte.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MochaLatte.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Java.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cappuccino.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MatchaLatte.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Caramel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Iced Chocolate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\White Mocha.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SaltedCaramel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sunset.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aesthetic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green apple.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Peach mango.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dark Caramel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MangoGraham.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Java chip.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dark Mocha.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
